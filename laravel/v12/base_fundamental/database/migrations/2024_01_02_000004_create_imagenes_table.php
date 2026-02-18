@@ -11,13 +11,13 @@ return new class extends Migration
         // Tabla polimórfica para imágenes
         Schema::create('imagenes', function (Blueprint $table) {
             $table->id();
-            $table->morphs('imageable'); // Crea imageable_id e imageable_type
+            $table->morphs('imageable'); // Crea imageable_id, imageable_type e índice automáticamente
             $table->string('url');
             $table->string('nombre')->nullable();
             $table->integer('orden')->default(0);
             $table->timestamps();
             
-            $table->index(['imageable_type', 'imageable_id']);
+            // morphs() ya crea el índice compuesto, solo agregamos el de orden
             $table->index('orden');
         });
     }
