@@ -112,6 +112,12 @@
             letter-spacing: 0.5px;
             margin-bottom: 12px;
         }
+        .badge.CRÍTICO {
+            background: #ef4444;
+        }
+        .badge.ESENCIAL {
+            background: #f59e0b;
+        }
     </style>
 </head>
 <body>
@@ -265,6 +271,44 @@
                     <li><a href="/ejemplos/testing">→ Ver Ejemplos</a></li>
                 </ul>
                 <p><small>Conceptos: TDD, Mocking, Coverage, Assertions</small></p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 60px; margin-bottom: 24px; font-size: 32px; color: #1f2937;">🏢 Infraestructura y Producción</h2>
+        <p style="color: #6b7280; margin-bottom: 32px;">Lleva tu aplicación a producción de forma profesional</p>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="icon">🔒</div>
+                <span class="badge">CRÍTICO</span>
+                <h2>13. Seguridad</h2>
+                <p>CSRF, XSS, SQL Injection, Mass Assignment, Hashing, Encriptación.</p>
+                <ul>
+                    <li><a href="/ejemplos/seguridad">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: Rate Limiting, Validaciones, Storage Seguro</small></p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚡</div>
+                <span class="badge">ESENCIAL</span>
+                <h2>14. Performance</h2>
+                <p>Cache, Query Optimization, Horizon, Lazy Collections, Octane.</p>
+                <ul>
+                    <li><a href="/ejemplos/performance">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: Redis, Load Balancing, Docker, Config Cache</small></p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <span class="badge">ESENCIAL</span>
+                <h2>15. DevOps</h2>
+                <p>Docker, CI/CD, Git Avanzado, Deploy, Logs, Monitoreo.</p>
+                <ul>
+                    <li><a href="/ejemplos/devops">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: Forge, Vapor, AWS, Sentry, Telescope</small></p>
             </div>
         </div>
     </div>

@@ -95,3 +95,40 @@ Route::prefix('ejemplos/testing')->group(function () {
     Route::get('/tdd', [\App\Http\Controllers\TestingController::class, 'tdd']);
     Route::get('/cobertura', [\App\Http\Controllers\TestingController::class, 'cobertura']);
 });
+
+// Rutas de Seguridad
+Route::prefix('ejemplos/seguridad')->group(function () {
+    Route::get('/', [\App\Http\Controllers\SeguridadController::class, 'index']);
+    Route::get('/csrf', [\App\Http\Controllers\SeguridadController::class, 'csrf']);
+    Route::get('/xss', [\App\Http\Controllers\SeguridadController::class, 'xss']);
+    Route::get('/sql-injection', [\App\Http\Controllers\SeguridadController::class, 'sqlInjection']);
+    Route::get('/mass-assignment', [\App\Http\Controllers\SeguridadController::class, 'massAssignment']);
+    Route::get('/hashing', [\App\Http\Controllers\SeguridadController::class, 'hashing']);
+    Route::get('/encriptacion', [\App\Http\Controllers\SeguridadController::class, 'encriptacion']);
+    Route::get('/rate-limiting', [\App\Http\Controllers\SeguridadController::class, 'rateLimiting']);
+    Route::get('/validaciones', [\App\Http\Controllers\SeguridadController::class, 'validaciones']);
+    Route::get('/storage', [\App\Http\Controllers\SeguridadController::class, 'storage']);
+});
+
+// Rutas de Performance
+Route::prefix('ejemplos/performance')->group(function () {
+    Route::get('/', [\App\Http\Controllers\PerformanceController::class, 'index']);
+    Route::get('/cache', [\App\Http\Controllers\PerformanceController::class, 'cache']);
+    Route::get('/query-optimization', [\App\Http\Controllers\PerformanceController::class, 'queryOptimization']);
+    Route::get('/lazy-collections', [\App\Http\Controllers\PerformanceController::class, 'lazyCollections']);
+    Route::get('/horizon', [\App\Http\Controllers\PerformanceController::class, 'horizon']);
+    Route::get('/octane', [\App\Http\Controllers\PerformanceController::class, 'octane']);
+    Route::get('/config-cache', [\App\Http\Controllers\PerformanceController::class, 'configCache']);
+    Route::get('/docker', [\App\Http\Controllers\PerformanceController::class, 'docker']);
+});
+
+// Rutas de DevOps
+Route::prefix('ejemplos/devops')->group(function () {
+    Route::get('/', [\App\Http\Controllers\DevOpsController::class, 'index']);
+    Route::get('/docker', [\App\Http\Controllers\DevOpsController::class, 'docker']);
+    Route::get('/cicd', [\App\Http\Controllers\DevOpsController::class, 'cicd']);
+    Route::get('/git', [\App\Http\Controllers\DevOpsController::class, 'git']);
+    Route::get('/deploy', [\App\Http\Controllers\DevOpsController::class, 'deploy']);
+    Route::get('/logs', [\App\Http\Controllers\DevOpsController::class, 'logs']);
+    Route::get('/monitoreo', [\App\Http\Controllers\DevOpsController::class, 'monitoreo']);
+});
