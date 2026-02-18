@@ -250,11 +250,12 @@
 </body>
 </html>
 
-        <h2 style="margin-top: 60px; margin-bottom: 24px; font-size: 32px; color: #1f2937;">💎 Nivel Avanzado</h2>
+        <h2 style="margin-top: 60px; margin-bottom: 24px; font-size: 32px; color: #1f2937;">💼 Conceptos Profesionales</h2>
         
         <div class="grid">
             <div class="card">
                 <div class="icon">💎</div>
+                <span class="badge">PROFESIONAL</span>
                 <h2>10. Eloquent Avanzado</h2>
                 <p>Relaciones complejas, N+1, scopes, accessors, mutators y optimización.</p>
                 <ul>
@@ -265,6 +266,7 @@
 
             <div class="card">
                 <div class="icon">🏗️</div>
+                <span class="badge">PROFESIONAL</span>
                 <h2>11. Arquitectura Limpia</h2>
                 <p>Controllers limpios, DTOs, Actions, Services, Repositories y Policies.</p>
                 <ul>
@@ -275,7 +277,7 @@
 
             <div class="card">
                 <div class="icon">🧪</div>
-                <span class="badge">NUEVO</span>
+                <span class="badge">PROFESIONAL</span>
                 <h2>12. Testing</h2>
                 <p>PHPUnit, Pest, Feature Tests, Unit Tests, Mocking y TDD.</p>
                 <ul>
