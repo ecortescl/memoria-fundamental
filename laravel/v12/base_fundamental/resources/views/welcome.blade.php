@@ -101,6 +101,17 @@
             font-size: 14px;
             color: #FF2D20;
         }
+        .badge {
+            display: inline-block;
+            background: #FF2D20;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
     </style>
 </head>
 <body>
@@ -219,38 +230,8 @@
             </div>
         </div>
 
-        <h2 style="margin-top: 60px; margin-bottom: 24px; font-size: 32px; color: #1f2937;">🔥 Eloquent Avanzado</h2>
-        <p style="color: #6b7280; margin-bottom: 32px;">Domina las técnicas avanzadas de Eloquent ORM</p>
-        
-        <div class="grid">
-            <div class="card">
-                <div class="icon">🚀</div>
-                <h2>10. Eloquent Avanzado</h2>
-                <p>Relaciones complejas, optimización, scopes y mucho más.</p>
-                <ul>
-                    <li><a href="/ejemplos/eloquent">→ Ver Todos los Ejemplos</a></li>
-                    <li><a href="/ejemplos/eloquent/relaciones">→ Relaciones y N+1</a></li>
-                    <li><a href="/ejemplos/eloquent/playground">→ Playground Interactivo</a></li>
-                </ul>
-                <p><small>Conceptos: Eager Loading, Polimórficas, Pivot, Scopes, Query Builder</small></p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🏗️</div>
-                <h2>11. Arquitectura Limpia</h2>
-                <p>Organiza tu código de forma profesional y mantenible.</p>
-                <ul>
-                    <li><a href="/ejemplos/arquitectura">→ Ver Todos los Ejemplos</a></li>
-                    <li><a href="/ejemplos/arquitectura/comparacion">→ Malo vs Bueno</a></li>
-                </ul>
-                <p><small>Conceptos: Controllers, Services, Actions, DTOs, Form Requests, Policies</small></p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-
         <h2 style="margin-top: 60px; margin-bottom: 24px; font-size: 32px; color: #1f2937;">💼 Conceptos Profesionales</h2>
+        <p style="color: #6b7280; margin-bottom: 32px;">Diferencia entre junior y senior: arquitectura, testing y optimización</p>
         
         <div class="grid">
             <div class="card">
@@ -286,3 +267,6 @@
                 <p><small>Conceptos: TDD, Mocking, Coverage, Assertions</small></p>
             </div>
         </div>
+    </div>
+</body>
+</html>
