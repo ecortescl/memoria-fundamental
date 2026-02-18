@@ -221,8 +221,19 @@ class EloquentAvanzadoController extends Controller
                 DB::enableQueryLog();
                 $inicio = microtime(true);
                 
+                // Importar clases necesarias en el contexto del eval
+                $Producto = Producto::class;
+                $Categoria = Categoria::class;
+                $Etiqueta = Etiqueta::class;
+                
                 // Evaluar código de forma segura
                 $codigo = $request->input('codigo');
+                
+                // Reemplazar nombres de clase por variables con namespace completo
+                $codigo = str_replace('Producto::', '$Producto::', $codigo);
+                $codigo = str_replace('Categoria::', '$Categoria::', $codigo);
+                $codigo = str_replace('Etiqueta::', '$Etiqueta::', $codigo);
+                
                 $resultado = eval('return ' . $codigo . ';');
                 
                 $tiempo = (microtime(true) - $inicio) * 1000;
