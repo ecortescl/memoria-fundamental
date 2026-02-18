@@ -249,3 +249,38 @@
     </div>
 </body>
 </html>
+
+        <h2 style="margin-top: 60px; margin-bottom: 24px; font-size: 32px; color: #1f2937;">💎 Nivel Avanzado</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="icon">💎</div>
+                <h2>10. Eloquent Avanzado</h2>
+                <p>Relaciones complejas, N+1, scopes, accessors, mutators y optimización.</p>
+                <ul>
+                    <li><a href="/ejemplos/eloquent">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: Polimórficas, Pivot, Eager Loading, Query Optimization</small></p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏗️</div>
+                <h2>11. Arquitectura Limpia</h2>
+                <p>Controllers limpios, DTOs, Actions, Services, Repositories y Policies.</p>
+                <ul>
+                    <li><a href="/ejemplos/arquitectura">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: SOLID, Separation of Concerns, Clean Code</small></p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🧪</div>
+                <span class="badge">NUEVO</span>
+                <h2>12. Testing</h2>
+                <p>PHPUnit, Pest, Feature Tests, Unit Tests, Mocking y TDD.</p>
+                <ul>
+                    <li><a href="/ejemplos/testing">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: TDD, Mocking, Coverage, Assertions</small></p>
+            </div>
+        </div>

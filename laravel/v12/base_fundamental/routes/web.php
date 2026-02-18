@@ -80,3 +80,18 @@ Route::prefix('ejemplos/arquitectura')->group(function () {
     Route::get('/policies', [ArquitecturaController::class, 'policies']);
     Route::get('/comparacion', [ArquitecturaController::class, 'comparacion']);
 });
+
+// Rutas de Testing
+Route::prefix('ejemplos/testing')->group(function () {
+    Route::get('/', [\App\Http\Controllers\TestingController::class, 'index']);
+    Route::get('/introduccion', [\App\Http\Controllers\TestingController::class, 'introduccion']);
+    Route::get('/phpunit-vs-pest', [\App\Http\Controllers\TestingController::class, 'phpunitVsPest']);
+    Route::get('/feature-tests', [\App\Http\Controllers\TestingController::class, 'featureTests']);
+    Route::get('/unit-tests', [\App\Http\Controllers\TestingController::class, 'unitTests']);
+    Route::get('/mocking', [\App\Http\Controllers\TestingController::class, 'mocking']);
+    Route::get('/jobs', [\App\Http\Controllers\TestingController::class, 'jobs']);
+    Route::get('/events', [\App\Http\Controllers\TestingController::class, 'events']);
+    Route::get('/apis', [\App\Http\Controllers\TestingController::class, 'apis']);
+    Route::get('/tdd', [\App\Http\Controllers\TestingController::class, 'tdd']);
+    Route::get('/cobertura', [\App\Http\Controllers\TestingController::class, 'cobertura']);
+});
