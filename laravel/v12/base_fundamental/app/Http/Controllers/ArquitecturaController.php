@@ -23,8 +23,10 @@ class ArquitecturaController extends Controller
     public function __construct(
         private ProductoService $productoService
     ) {
-        // Aplicar policies automáticamente
-        $this->authorizeResource(Producto::class, 'producto');
+        // authorizeResource solo funciona con resource controllers
+        // Para este ejemplo educativo, no lo usamos aquí
+        // En producción con resource controller, usarías:
+        // $this->authorizeResource(Producto::class, 'producto');
     }
 
     /**
