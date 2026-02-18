@@ -5,6 +5,7 @@ use App\Http\Controllers\VariablesController;
 use App\Http\Controllers\FuncionesController;
 use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\ServiciosController;
+use App\Http\Controllers\AvanzadosController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,4 +43,12 @@ Route::prefix('ejemplos/servicios')->group(function () {
     Route::get('/stock-bajo', [ServiciosController::class, 'stockBajo']);
     Route::get('/buscar', [ServiciosController::class, 'buscar']);
     Route::post('/descuento/{id}', [ServiciosController::class, 'aplicarDescuento']);
+});
+
+// Rutas de Ejemplos Avanzados
+Route::prefix('ejemplos/avanzados')->group(function () {
+    Route::get('/factory-seeder', [AvanzadosController::class, 'factorySeeder']);
+    Route::get('/api', [AvanzadosController::class, 'api']);
+    Route::get('/jobs-queues', [AvanzadosController::class, 'jobsQueues']);
+    Route::post('/despachar-job', [AvanzadosController::class, 'despacharJob']);
 });

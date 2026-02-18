@@ -29,6 +29,11 @@
             color: #FF2D20;
             margin-bottom: 12px;
         }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f2937;
+        }
         .subtitle {
             font-size: 18px;
             color: #6b7280;
@@ -176,6 +181,41 @@
                     <li><a href="/ejemplos/servicios/buscar?q=">→ Búsqueda</a></li>
                 </ul>
                 <p><small>Conceptos: Inyección de dependencias, Service Container</small></p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 60px; margin-bottom: 24px; font-size: 32px; color: #1f2937;">🚀 Conceptos Avanzados</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="icon">🏭</div>
+                <h2>7. Factory y Seeder</h2>
+                <p>Genera datos de prueba automáticamente para desarrollo y testing.</p>
+                <ul>
+                    <li><a href="/ejemplos/avanzados/factory-seeder">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: Faker, Estados, Seeders, Testing</small></p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h2>8. API REST</h2>
+                <p>Crea endpoints para consumir desde aplicaciones externas.</p>
+                <ul>
+                    <li><a href="/ejemplos/avanzados/api">→ Ver Documentación</a></li>
+                    <li><a href="/api/productos" target="_blank">→ Probar API</a></li>
+                </ul>
+                <p><small>Conceptos: JSON, HTTP Methods, Status Codes, Validación</small></p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h2>9. Jobs y Queues</h2>
+                <p>Ejecuta tareas pesadas en segundo plano sin bloquear al usuario.</p>
+                <ul>
+                    <li><a href="/ejemplos/avanzados/jobs-queues">→ Ver Ejemplos</a></li>
+                </ul>
+                <p><small>Conceptos: Async, Workers, Drivers, Supervisor</small></p>
             </div>
         </div>
     </div>
