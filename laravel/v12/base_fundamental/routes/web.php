@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\ServiciosController;
 use App\Http\Controllers\AvanzadosController;
 use App\Http\Controllers\EloquentAvanzadoController;
+use App\Http\Controllers\ArquitecturaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -65,4 +66,17 @@ Route::prefix('ejemplos/eloquent')->group(function () {
     Route::get('/query-avanzado', [EloquentAvanzadoController::class, 'queryAvanzado']);
     Route::get('/optimizacion', [EloquentAvanzadoController::class, 'optimizacion']);
     Route::match(['get', 'post'], '/playground', [EloquentAvanzadoController::class, 'playground']);
+});
+
+// Rutas de Arquitectura Limpia
+Route::prefix('ejemplos/arquitectura')->group(function () {
+    Route::get('/', [ArquitecturaController::class, 'index']);
+    Route::get('/controller-limpio', [ArquitecturaController::class, 'controllerLimpio']);
+    Route::get('/form-requests', [ArquitecturaController::class, 'formRequests']);
+    Route::get('/dtos', [ArquitecturaController::class, 'dtos']);
+    Route::get('/actions', [ArquitecturaController::class, 'actions']);
+    Route::get('/services', [ArquitecturaController::class, 'services']);
+    Route::get('/repositories', [ArquitecturaController::class, 'repositories']);
+    Route::get('/policies', [ArquitecturaController::class, 'policies']);
+    Route::get('/comparacion', [ArquitecturaController::class, 'comparacion']);
 });

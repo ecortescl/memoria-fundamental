@@ -234,6 +234,17 @@
                 </ul>
                 <p><small>Conceptos: Eager Loading, Polimórficas, Pivot, Scopes, Query Builder</small></p>
             </div>
+
+            <div class="card">
+                <div class="icon">🏗️</div>
+                <h2>11. Arquitectura Limpia</h2>
+                <p>Organiza tu código de forma profesional y mantenible.</p>
+                <ul>
+                    <li><a href="/ejemplos/arquitectura">→ Ver Todos los Ejemplos</a></li>
+                    <li><a href="/ejemplos/arquitectura/comparacion">→ Malo vs Bueno</a></li>
+                </ul>
+                <p><small>Conceptos: Controllers, Services, Actions, DTOs, Form Requests, Policies</small></p>
+            </div>
         </div>
     </div>
 </body>
