@@ -6,6 +6,7 @@ use App\Http\Controllers\FuncionesController;
 use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\ServiciosController;
 use App\Http\Controllers\AvanzadosController;
+use App\Http\Controllers\EloquentAvanzadoController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -51,4 +52,17 @@ Route::prefix('ejemplos/avanzados')->group(function () {
     Route::get('/api', [AvanzadosController::class, 'api']);
     Route::get('/jobs-queues', [AvanzadosController::class, 'jobsQueues']);
     Route::post('/despachar-job', [AvanzadosController::class, 'despacharJob']);
+});
+
+// Rutas de Eloquent Avanzado
+Route::prefix('ejemplos/eloquent')->group(function () {
+    Route::get('/', [EloquentAvanzadoController::class, 'index']);
+    Route::get('/relaciones', [EloquentAvanzadoController::class, 'relaciones']);
+    Route::get('/polimorficas', [EloquentAvanzadoController::class, 'polimorficas']);
+    Route::get('/pivot', [EloquentAvanzadoController::class, 'pivotPersonalizado']);
+    Route::get('/scopes', [EloquentAvanzadoController::class, 'scopes']);
+    Route::get('/accessors-mutators', [EloquentAvanzadoController::class, 'accessorsMutators']);
+    Route::get('/query-avanzado', [EloquentAvanzadoController::class, 'queryAvanzado']);
+    Route::get('/optimizacion', [EloquentAvanzadoController::class, 'optimizacion']);
+    Route::match(['get', 'post'], '/playground', [EloquentAvanzadoController::class, 'playground']);
 });
