@@ -45,4 +45,19 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Helper methods para Policies
+     * En una aplicación real, estos métodos verificarían roles en la BD
+     */
+    public function isAdmin(): bool
+    {
+        // Simulación: en producción verificarías un campo 'role' o tabla de roles
+        return $this->email === 'admin@example.com';
+    }
+
+    public function isManager(): bool
+    {
+        return $this->email === 'manager@example.com' || $this->isAdmin();
+    }
 }

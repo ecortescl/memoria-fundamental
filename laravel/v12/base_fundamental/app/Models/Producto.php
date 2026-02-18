@@ -156,4 +156,10 @@ class Producto extends Model
     {
         return $this->vistas >= 100;
     }
+
+    public function tieneVentas(): bool
+    {
+        // Simulación: en producción verificarías si tiene ventas asociadas
+        return false;
+    }
 }
